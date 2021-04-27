@@ -14,10 +14,10 @@
 
 // Il software deve chiedere per 10 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti. (modificato) 
+var somma = 0;
 
-var somma = numeri++;
 for (var i = 0; i < 10; i++) {
-    var numeri = prompt('inserisci un numero');
+    var numeri = Number(prompt('inserisci un numero'));
+    somma += numeri
 }
-console.log(numeri);
 console.log(somma);
