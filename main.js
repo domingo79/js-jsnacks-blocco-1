@@ -26,16 +26,30 @@
 // In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome 
 // e comunicagli se può partecipare o no alla festa. (modificato) 
 
-var lista_invitati = ['domenico', 'diego', 'rita', 'nunzia', 'eleonora', 'carmen', 'erika',];
-var nome_invitato = prompt('il tuo nome?');
-var invitato = false;
+// var lista_invitati = ['domenico', 'diego', 'rita', 'nunzia', 'eleonora', 'carmen', 'erika',];
+// var nome_invitato = prompt('il tuo nome?');
+// var invitato = false;
 
-for (var i = 0; i < lista_invitati.length; i++) {
-    var controllo_lista = lista_invitati[i];
-    if (controllo_lista == lista_invitati) {
-        invitato = true;
-        console.log('ben venuto ' + controllo_lista);
-    } else {
-        console.log('Mi dispiace  nn sei in lista');
+// for (var i = 0; i < lista_invitati.length; i++) {
+//     var controllo_lista = lista_invitati[i];
+//     if (nome_invitato == lista_invitati) {
+//         invitato = true;
+//         console.log('ben venuto ' + nome_invitato);
+//     }
+// }
+// console.log('mi dispiace nn sei in lista');
+
+// Snack 5:
+// Crea un array vuoto.
+// Chiedi per 6 volte all’utente di inserire un numero,
+// se è dispari inseriscilo nell’array. (modificato) 
+var array = [];
+
+for (var i = 0; i < 6; i++) {
+    var numero = Number(prompt('inserisci un numero'));
+    if (numero % 2 == 1) {
+        array.push(numero);
     }
 }
+
+console.log(array);
