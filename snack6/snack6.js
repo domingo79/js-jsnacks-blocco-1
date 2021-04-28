@@ -3,6 +3,14 @@
 
 var n = Number(prompt('numero'));
 
-for (var i = 0; i < n; i++) {
+var i = 0;
+var condizione = true;
+
+while (condizione) {
     console.log(Math.pow(n, 3));
+    console.log('numeri ' + n + (i));
+    i++;
+    condizione = confirm('altro numero?')
 }
+
+
