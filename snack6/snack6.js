@@ -3,15 +3,12 @@
 
 var n = Number(prompt('numero'));
 
-var i = 0;
-var condizione = true;
+// n = Math.pow(n, 3)
+console.log(n, typeof (n));
 
-while (condizione) {
-    console.log(Math.pow(n, 3));
-    var cattura = n;
-    console.log(cattura + ' potenza di: ' + n);
-    i++;
-    condizione = confirm('altro numero?')
+for (var i = 1; i <= 3; i++) {
+    var cubo = n ** i;
+    console.log((i), cubo);
 }
 
 
