@@ -6,9 +6,9 @@ var n = Number(prompt('numero'));
 // n = Math.pow(n, 3)
 console.log(n, typeof (n));
 
-for (var i = 1; i <= 3; i++) {
-    var cubo = n ** i;
-    console.log((i), cubo);
+for (var i = 1; i <= n; i++) {
+    var cubo = Math.pow(i, 3);
+    console.log(cubo);
 }
 
 
