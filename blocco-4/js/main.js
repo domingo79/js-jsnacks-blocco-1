@@ -5,9 +5,9 @@ var Palla = {
 }
 
 // snack 1b Attraverso un prompt dare la possibilità all’utente di modificare il peso della palla.
-//var nuovoPeso = parseInt(prompt('Inserisci il peso della palla'));
+var nuovoPeso = parseInt(prompt('Inserisci il peso della palla'));
 //console.log(nuovoPeso);
-//Palla.peso = nuovoPeso;
+Palla.peso = nuovoPeso;
 //console.log(Palla);
 
 //Creare un oggetto che rappresenti un triangolo rettangolo, 
