@@ -10,20 +10,16 @@ var Palla = {
 //Palla.peso = nuovoPeso;
 //console.log(Palla);
 
-//Creare un oggetto che rappresenti un triangolo rettangolo, con le seguenti proprietà: base e altezza.
+//Creare un oggetto che rappresenti un triangolo rettangolo, 
+//con le seguenti proprietà: base e altezza.
 //Calcolare perimetro e area.
 
 var Triangolo = {
     base: 20,
     altezza: 15,
 }
-var a = 15;
-var b = 20;
+Triangolo.area = (Triangolo.base * Triangolo.altezza) / 2;
+Triangolo.ipotenusa = Math.sqrt(Math.pow(Triangolo.base, 2) + Math.pow(Triangolo.altezza, 2));
+Triangolo.perimetro = Triangolo.base + Triangolo.altezza + Triangolo.ipotenusa;
 
-var aria = (b * a) / 2;
-var c = (Math.pow(a, 2)) + (Math.pow(b, 2));
-var perimetro = a + b + c;
-
-
-console.log(perimetro);
-console.log(aria);
+console.log(Triangolo);
