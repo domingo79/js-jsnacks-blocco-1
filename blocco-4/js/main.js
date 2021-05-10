@@ -14,13 +14,16 @@ var Palla = {
 //Calcolare perimetro e area.
 
 var Triangolo = {
-    b: 20,
-    a: 15,
+    base: 20,
+    altezza: 15,
 }
 var a = 15;
 var b = 20;
+
 var aria = (b * a) / 2;
-console.log(aria);
-var c = (Math.sqrt(a)) + (Math.sqrt(b));
+var c = (Math.pow(a, 2)) + (Math.pow(b, 2));
 var perimetro = a + b + c;
+
+
 console.log(perimetro);
+console.log(aria);
